@@ -1,0 +1,24 @@
+{
+  "name": "chrome-food-reviews",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/f-fong/chrome-food-reviews.svg?branch=master)](https://travis-ci.org/f-fong/chrome-food-reviews)",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f-fong/chrome-food-reviews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f-fong/chrome-food-reviews/issues"
+  },
+  "homepage": "https://github.com/f-fong/chrome-food-reviews#readme"
+}
