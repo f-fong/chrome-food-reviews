@@ -11,8 +11,8 @@
     ],
     "content_scripts": [{
         "matches": ["https://www.ubereats.com/*"],
-        "js": ["content-script.js"]
+        "js": ["build/load.js"]
     }],
-    "web_accessible_resources": ["build/main.bundle.js"],
+    "web_accessible_resources": ["build/main.js"],
     "manifest_version": 2
 }
