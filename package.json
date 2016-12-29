@@ -16,6 +16,7 @@
     "babel": "babel --presets es2015 src/main.js -o build/main.bundle.js",
     "build": "webpack",
     "dev": "webpack --watch",
+    "lint": "eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
