@@ -4,11 +4,16 @@
   "description": "[![Build Status](https://travis-ci.org/f-fong/chrome-food-reviews.svg?branch=master)](https://travis-ci.org/f-fong/chrome-food-reviews)",
   "main": "index.js",
   "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "path": "^0.12.7",
     "webpack": "^1.14.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 src/main.js -o build/main.bundle.js",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
