@@ -13,9 +13,10 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 src/main.js -o build/main.bundle.js",
-    "webpack": "webpack"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
