@@ -37,6 +37,5 @@ $(() => {
     contentType: 'application/x-www-form-urlencoded',
     dataType: 'json'
   });
-
 });
 
