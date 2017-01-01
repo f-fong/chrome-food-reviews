@@ -7,7 +7,8 @@
     },
     "permissions": [
         "activeTab",
-        "https://www.ubereats.com/"
+        "https://www.ubereats.com/",
+        "https://api.yelp.com/"
     ],
     "content_scripts": [{
         "matches": ["https://www.ubereats.com/*"],
