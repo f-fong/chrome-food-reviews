@@ -3,7 +3,7 @@ import Store from './storage';
 import $ from 'jquery';
 
 
-Store.access_token = 'hello'
+Store.access_token = 'hello';
 
 $(() => {
   $('#app').text(Store.access_token);
