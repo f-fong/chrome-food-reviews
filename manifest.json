@@ -7,6 +7,7 @@
     },
     "permissions": [
         "activeTab",
+        "storage",
         "https://www.ubereats.com/",
         "https://api.yelp.com/"
     ],
