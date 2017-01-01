@@ -1,12 +1,22 @@
+import Store from './storage';
+
 import $ from 'jquery';
 
-$(() => { 
+
+Store.access_token = 'hello'
+
+$(() => {
+  $('#app').text(Store.access_token);
+});
+
+
+$(() => {
   $.ajax({
     type: 'POST',
     url: 'https://api.yelp.com/oauth2/token',
     data: {
-      'grant_type': 'client_credentials', 
-      'client_id': 'PSc31XzADb0QmeG8wrqS0g', 
+      'grant_type': 'client_credentials',
+      'client_id': 'PSc31XzADb0QmeG8wrqS0g',
       'client_secret': 'stckEgTOJIPWD7qzBz6vsIKIexfwZqMN7YRf8OYsSTv2zz255FzJH0iraLoX4Uka'
     },
     success: (data) => {
