@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+
 alert('hello world!!!!', $);
 
 // $(function() {
@@ -14,10 +15,4 @@ $(() => {
 	}, 15000);
 });
 
-/* App ID
-PSc31XzADb0QmeG8wrqS0g
-
-App Secret
-stckEgTOJIPWD7qzBz6vsIKIexfwZqMN7YRf8OYsSTv2zz255FzJH0iraLoX4Uka 
-*/
 
