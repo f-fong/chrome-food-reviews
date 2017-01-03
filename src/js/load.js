@@ -7,8 +7,6 @@ s.onload = () => {};
 
 // eslint-disable-next-line no-unused-vars
 const store = new Store(() => {
-  // The access token is loaded from memory now.
+  s.setAttribute('access-token', store.access_token);
+  document.head.appendChild(s);
 });
-
-// (document.head || document.documentElement).appendChild(s);
-document.head.appendChild(s);
