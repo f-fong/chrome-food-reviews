@@ -20,7 +20,7 @@ $(() => {
           'Authorization': 'Bearer ' + 'Af0nQnsJElDI9njiac977wRJsxFFgc_kLi4OtJyhZHbjg4xbii0lmIb6bN1WbaWpV9MIomih8qomeJ3cQmt-N88vSgvp0jfCFT19YPcgZ4Ts9hYrWK9L09saEUJoWHYx'
         },
         success: (data) => {
-          $(this).find('div[class^=content_]').append(`<p>${JSON.stringify(data.rating)}</p>`);
+          $(this).find('div[class^=content_]').append(`<p>${data.rating}</p>`);
         },
         dataType: 'json'
       });
