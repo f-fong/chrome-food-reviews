@@ -9,13 +9,13 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    'load.js': './src/js/load.js',
-    'main.js': './src/js/main.js',
-    'popup.js': './src/js/popup.js'
+    load: './src/js/load.js',
+    main: './src/js/main.js',
+    popup: './src/js/popup.js'
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name]'
+    filename: '[name].js'
   },
   module: {
     loaders: [
