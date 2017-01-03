@@ -1,3 +1,5 @@
+import '../popup.html';
+
 import Store from './storage';
 
 import $ from 'jquery';
