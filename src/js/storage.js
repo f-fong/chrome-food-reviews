@@ -20,7 +20,7 @@ export default class Store {
   }
 
   // Event handler for when a change in the chrome storage happens.
-  onChanged(keys, namespace) {
+  onChanged() {
     // TODO: update this._access_token
   }
 
