@@ -5,11 +5,11 @@ import Store from './storage';
 import $ from 'jquery';
 
 
-Store.access_token = 'hello';
+// Store.access_token = 'hello';
 
-$(() => {
-  $('#app').text(Store.access_token);
-});
+// $(() => {
+//   $('#app').text(Store.access_token);
+// });
 
 
 $(() => {
@@ -17,26 +17,27 @@ $(() => {
     type: 'POST',
     url: 'https://api.yelp.com/oauth2/token',
     data: {
-      'grant_type': 'client_credentials',
-      'client_id': 'PSc31XzADb0QmeG8wrqS0g',
+      'grant_type': 'client_credentials', 
+      'client_id': 'PSc31XzADb0QmeG8wrqS0g', 
       'client_secret': 'stckEgTOJIPWD7qzBz6vsIKIexfwZqMN7YRf8OYsSTv2zz255FzJH0iraLoX4Uka'
     },
     success: (data) => {
-      $.ajax({
-        type: 'GET',
-        url: 'https://api.yelp.com/v3/businesses/gary-danko-san-francisco',
-        headers: {
-          'Authorization': 'Bearer ' + data.access_token
-        },
-        success: (data) => {
-          $('#app').text(JSON.stringify(data));
-        },
-        dataType: 'json'
-      });
+      // $.ajax({
+      //   type: 'GET',
+      //   url: 'https://api.yelp.com/v3/businesses/gary-danko-san-francisco',
+      //   headers: {
+      //     'Authorization': 'Bearer ' + data.access_token
+      //   },
+      //   success: (data) => {
+      //     $('#app').text(JSON.stringify(data));
+      //   },
+      //   dataType: 'json'
+      // });
+      Store.access_token = data.access_token;
+      $('#app').text(Store.access_token);
     },
     contentType: 'application/x-www-form-urlencoded',
-    dataType: 'json'
+    dataType: 'json' 
   });
-
 });
 
