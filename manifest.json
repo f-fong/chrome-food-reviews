@@ -15,6 +15,5 @@
         "matches": ["https://www.ubereats.com/*"],
         "js": ["build/load.js"]
     }],
-    "web_accessible_resources": ["build/main.js"],
     "manifest_version": 2
 }

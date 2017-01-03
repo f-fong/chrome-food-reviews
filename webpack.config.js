@@ -10,7 +10,6 @@ var path = require('path');
 module.exports = {
   entry: {
     load: './src/js/load.js',
-    main: './src/js/main.js',
     popup: './src/js/popup.js'
   },
   output: {
