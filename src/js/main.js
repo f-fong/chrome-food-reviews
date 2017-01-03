@@ -1,5 +1,7 @@
 import $ from 'jquery';
 
+// eslint-disable-next-line no-unused-vars
+const access_token = document.currentScript.getAttribute('access-token');
 
 $(() => {
   setTimeout(() => {
